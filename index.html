@@ -8,9 +8,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
   <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
   <meta name="description" content="">
+  <style>
+	  .myNewClassName {
+	  	background-color; goldenSilk
+  		}
+  </style>
   <script language="javascript">
-      function makeChange(){
-        document.heading.className="#F3E3C3";
+      function changeStuff(){
+	      thingToChange = document.getElementById("poem");
+      	thingToChange.className = "the things your heart may well regret";
+    	}
+      fucntion clearChange() {
+	      thingToChange = document.getElementById("poem");
+	      thingToChange.className = "";
+</script>
+  
         
  
       
@@ -32,7 +44,11 @@
   
 </head>
 <body>
-  <h1 onmouseover="javascript:makeChange()"</h1>
+ 
+  <p id="poem">finish the lyric: duty means doing </p>
+	<button onclick="javascript:changeStuff()">answer</button>
+	<button onclick="javascript:changeStuff()">go back</button>
+  
   <section data-bs-version="5.1" class="menu cid-s48OLK6784" once="menu" id="menu1-h">
     
     <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
